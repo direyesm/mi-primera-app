@@ -7,7 +7,6 @@ import { Component } from "@angular/core";
     // archivo por separados
     styleUrls: ['./personas.component.css']
     
-
     //Archivo directo
     // styles: [`
     // h1{
@@ -17,5 +16,18 @@ import { Component } from "@angular/core";
 
 })
 export class PersonasComponent{
+    
+    deshabilitar = false
+    mensaje = 'No se ha agregado ninguna persona'
+    titulo = ''
 
+    agregarPersona(){
+
+        this.mensaje = 'Persona agregada'
+
+    }
+
+   /* modificarTitulo(event: Event){
+        this.titulo = (<HTMLInputElement>event.target).value
+    }*/
 }
